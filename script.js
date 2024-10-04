@@ -10,7 +10,7 @@ document.getElementById('trackingForm').addEventListener('submit', async functio
     localStorage.setItem('userPhone', phone);
 
     // Делаем запрос к AfterShip API
-    const apiKey = 'YOUR_API_KEY'; // Вставь сюда свой API ключ AfterShip
+    const apiKey = 'asat_ebdfaea4565d47b49facb27254cedad7'; 
     const url = `https://api.aftership.com/v4/trackings?tracking_number=${trackingNumber}`;
 
     try {
