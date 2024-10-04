@@ -7,11 +7,24 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Отслеживание посылок</h1>
-    <input type="text" id="trackingNumber" placeholder="Введите трек-номер">
-    <button onclick="trackPackage()">Отследить</button>
-    
-    <div id="result"></div>
+    <div class="container">
+        <h1>Отслеживание посылок</h1>
+        
+        <form id="trackingForm">
+            <label for="name">Имя пользователя:</label>
+            <input type="text" id="name" placeholder="Введите ваше имя" required>
+
+            <label for="phone">Номер телефона:</label>
+            <input type="tel" id="phone" placeholder="Введите ваш номер" required>
+
+            <label for="trackingNumber">Номер отслеживания:</label>
+            <input type="text" id="trackingNumber" placeholder="Введите номер отслеживания" required>
+
+            <button type="submit">Отследить</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
